@@ -1,0 +1,48 @@
+﻿Fall 2024 - Team 6: Lyric
+* Abhijna Maiya (@abhijnamaiya)
+* Darshan Phaldesai (@dphaldes)
+* Hitha Shamasundar (@hshamasu)
+* Shreyas Baburayanakoppal Sunil (@sbabura1)
+
+Abhijna Maiya
+1. Language Grammar
+2. Prototyping in Prolog
+3. ANTLR implementation of grammar
+4. Project Management
+5. AST Parsing
+6. Code Execution
+7. Documentation
+8. Video Presentation
+
+Darshan Phaldesai
+1. Language Grammar
+2. Prototyping in Prolog
+3. ANTLR Code generation 
+4. Testing Sample Program - Parse Tree generation
+5. AST Parsing
+6. Code Execution
+7. Documentation
+8. Video Presentation
+
+
+Hitha Shamasundar
+1. Language Grammar
+2. Prototyping in Prolog
+3. Lexer/Parser Implementation
+4. Testing Sample Program
+5. AST Parsing
+6. Code Execution
+7. Documentation
+8. Video Presentation
+
+
+Shreyas Baburayanakoppal Sunil 
+1. Language Grammar
+2. Prototyping in Prolog
+3. ANTLR implementation of grammar
+4. Design Document
+5. AST Parsing
+6. Code Execution
+7. Documentation
+8. Video Presentation
+

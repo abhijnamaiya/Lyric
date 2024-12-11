@@ -1,0 +1,42 @@
+<digit> ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+<char> ::= 'a' | 'b' | … | 'z'
+<num> ::= <num> <digit> | <digit>
+<cpr_sym> ::= ‘<’ | ‘<=’ | ‘>’ | ’>=’ | ‘==’
+<data_type>::= num | bool | str
+<bool_value>::= yeah | nah
+<str> ::= <str> ::= { <char> }
+
+<stmt> ::= <expr> ';'
+	|  <dec_stmt> ';'
+	|  <loop_stmt>
+	|  <repeat_stmt>
+	|  <check_stmt>
+	|  '{' <stmts> '}'
+<stmts> ::= <stmts> <stmt> | ε
+
+<expr> ::= <id>
+	|  <assign_expr>
+	|  <math_expr>
+	|  <cpr_expr>
+
+<dec_stmt> ::= <data_type> <id> | <data_type> <assign_expr>
+
+<id> ::= <char> | <id> <char> | <id> <digit>
+
+<assign_expr> ::= play <id>  <expr>
+
+<math_expr>. ::= <math_expr> '+' <math_term>
+		|  <math_expr> '-' <math_term>
+		|  <math_term>
+<math_term> ::= <math_term> '*' <math_factor>
+		|  <math_term> '/' <math_factor>
+		|  <math_factor>
+<math_factor> ::= <num> | '(' <math_expr> ')'
+
+<repeat_stmt> ::= repeat '(' <expr> ')' <stmt>
+
+<check_stmt> ::= check '(' <expr> ')' here <stmt>
+        | check '(' <expr> ')' here <stmt> there <stmt>
+
+<cpr_expr> ::= <cpr_term> <cpr_sym> <cpr_term>
+<cpr_term> ::= <id> | <number> | '(' <math_expr> ')'
